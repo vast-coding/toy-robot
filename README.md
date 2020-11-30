@@ -3,10 +3,11 @@
 ## Introduction
 
 The application is a simulation of a toy robot moving on a square table top, of dimensions 5 units x 5 units.
+https://github.com/vast-coding/toy-robot
 
-- [code](https://github.com/vast-coding/toy-robot.md)
+- [code](https://github.com/vast-coding/toy-robot)
 
-- [requirements](requirements.md)
+- [requirements](https://github.com/vast-coding/toy-robot/blob/main/repuirements.md)
 
 - [test coverage](https://toy-robot-test-coverage.vercel.app/)
 
