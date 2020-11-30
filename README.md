@@ -16,11 +16,11 @@ Output and control is by terminal.
 
 ## Commands
 
-A list of commands are in the src/input.txt file.
+A list of commands are in the `src/input.txt` file.
 
-Starting the simulation by running `npm run dev` will execute each command in this list, line by line.
+Starting the simulation by running `npm run dev` will execute each command in this test file, line by line.
 
-- `PLACE` - initial command to place Robot on board. All other commands are ignored until initial `PLACE` command.
+- `PLACE` - initial command to place Robot on board. All other commands are ignored until initial valid `PLACE` command.
 
 - `MOVE` - move one unit forward in current direction. Falling off edge is prevented.
 
@@ -33,6 +33,7 @@ Starting the simulation by running `npm run dev` will execute each command in th
 - Mac OSX
 - Node 14.15.1
 - Typescript
+- Jest
 
 ## Installation
 
@@ -41,11 +42,12 @@ Starting the simulation by running `npm run dev` will execute each command in th
 3. Running application:
    1. To run robot simulation in terminal: `npm run dev` _(uses watch mode, so updating `src/data/input.txt` will refresh results)_
    2. tests
-      1. to run tests: `npm run test`
-      2. to see the test results in browser, simply open [test coverage](https://toy-robot-test-coverage.vercel.app/) or run tests again to generate new results locally.
+      - to run tests: `npm run test`
+      - to see the test results in browser, simply open [test coverage](https://toy-robot-test-coverage.vercel.app/) or run tests again to generate new results locally.
 4. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run dev` first_
 
 ### Other terminal commands
 
-`npm run test:watch` for developement and debugging
-`npm run docs` generate documentation using TypeDoc
+- `npm run test:watch` for developement and debugging
+
+- `npm run docs` generate documentation using TypeDoc
