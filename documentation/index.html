@@ -64,75 +64,67 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
-					<h1>Install</h1>
+				<a href="#toy-robot" id="toy-robot" style="color: inherit; text-decoration: none;">
+					<h1>Toy Robot</h1>
+				</a>
+				<a href="#introduction" id="introduction" style="color: inherit; text-decoration: none;">
+					<h2>Introduction</h2>
+				</a>
+				<p>The application is a simulation of a toy robot moving on a square table top, of dimensions 5 units x 5 units.</p>
+				<ul>
+					<li><p><a href="https://github.com/vast-coding/toy-robot">code</a></p>
+					</li>
+					<li><p><a href="https://github.com/vast-coding/toy-robot/blob/main/repuirements.md">requirements</a></p>
+					</li>
+					<li><p><a href="https://toy-robot-test-coverage.vercel.app/">test coverage</a></p>
+					</li>
+				</ul>
+				<p>Output and control is by terminal.</p>
+				<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
+					<h2>Commands</h2>
+				</a>
+				<p>A list of commands are in the src/input.txt file.</p>
+				<p>Starting the simulation by running <code>npm run dev</code> will execute each command in this list, line by line.</p>
+				<ul>
+					<li><p><code>PLACE</code> - initial command to place Robot on board. All other commands are ignored until initial <code>PLACE</code> command.</p>
+					</li>
+					<li><p><code>MOVE</code> - move one unit forward in current direction. Falling off edge is prevented.</p>
+					</li>
+					<li><p><code>LEFT</code> and <code>RIGHT</code> - rotate 90 degrees.</p>
+					</li>
+					<li><p><code>REPORT</code> - display <code>X</code>,<code>Y</code> and <code>F</code> of the robot in the terminal.</p>
+					</li>
+				</ul>
+				<a href="#developement" id="developement" style="color: inherit; text-decoration: none;">
+					<h2>Developement</h2>
+				</a>
+				<ul>
+					<li>Mac OSX</li>
+					<li>Node 14.15.1</li>
+					<li>Typescript</li>
+				</ul>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
 				</a>
 				<ol>
-					<li><code>git clone my repo</code></li>
-					<li><code>npm install / yarn</code></li>
-					<li>to run robot:<ol>
-							<li>to run robot: <code>npm run dev</code></li>
-							<li>to run tests: <code>npm run test:watch</code></li>
+					<li>Clone the repository: <code>git clone https://github.com/vast-coding/toy-robot.git</code></li>
+					<li>Run <code>npm install</code> inside folder</li>
+					<li>Running application:<ol>
+							<li>To run robot simulation in terminal: <code>npm run dev</code> <em>(uses watch mode, so updating <code>src/data/input.txt</code> will refresh results)</em></li>
+							<li>tests<ol>
+									<li>to run tests: <code>npm run test</code></li>
+									<li>to see the test results in browser, simply open <a href="https://toy-robot-test-coverage.vercel.app/">test coverage</a> or run tests again to generate new results locally.</li>
+								</ol>
+							</li>
 						</ol>
 					</li>
-					<li>Robot instructions are in <code>src/data/input.txt</code>. You can edit this file, and watch console update in dev mode.</li>
+					<li>Robot instructions are in <code>src/data/input.txt</code>. You can edit this file, and see live changes. <em>be sure to use <code>npm run dev</code> first</em></li>
 				</ol>
-				<pre><code class="language-bash">npm install --save-dev jest             ts-jest typescript
-npm i -D               jest @types/jest ts-jest typescript
-npm i -D @types/node @types/express nodemon ts-node <span class="hljs-comment"># trey huffing</span>
-npm i -D typedoc
-<span class="hljs-comment"># to run typedoc use:</span>
-npx typedoc --out docs src
-<span class="hljs-comment"># npm init --force</span>
-npm init -y
-npm i typescript \
-  @types/node \
-  jest \
-  @types/jest \
-  ts-jest \
-  source-map-support \
-  @types/source-map-support \
-  onchange \
-  serve -D
-
-  <span class="hljs-comment"># dev server typescript - no need for build</span>
-npm install -D ts-node
-</code></pre>
-				<a href="#init" id="init" style="color: inherit; text-decoration: none;">
-					<h2>Init</h2>
+				<a href="#other-terminal-commands" id="other-terminal-commands" style="color: inherit; text-decoration: none;">
+					<h3>Other terminal commands</h3>
 				</a>
-				<p><code>package.json</code></p>
-				<pre><code><span class="hljs-string">&quot;tsc&quot;</span>: <span class="hljs-string">&quot;tsc&quot;</span></code></pre>
-				<pre><code class="language-bash"><span class="hljs-comment"># tsconfig.json</span>
-npm run tsc -- --init
-<span class="hljs-comment"># add further options</span>
-npm run tsc --init --rootDir src --outDir dist
-
-git init
-touch .gitignore
-code .
-<span class="hljs-comment"># jest config</span>
-npx ts-jest config:init
-npm t</code></pre>
-				<p>solid example node tsconfig.json file:</p>
-				<pre><code class="language-js">
-{
-  <span class="hljs-string">&quot;compilerOptions&quot;</span>: {
-    <span class="hljs-string">&quot;module&quot;</span>: <span class="hljs-string">&quot;commonjs&quot;</span>,
-    <span class="hljs-string">&quot;esModuleInterop&quot;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-string">&quot;allowSyntheticDefaultImports&quot;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;es6&quot;</span>,
-    <span class="hljs-string">&quot;noImplicitAny&quot;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-string">&quot;moduleResolution&quot;</span>: <span class="hljs-string">&quot;node&quot;</span>,
-    <span class="hljs-string">&quot;sourceMap&quot;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-string">&quot;outDir&quot;</span>: <span class="hljs-string">&quot;dist&quot;</span>,
-    <span class="hljs-string">&quot;baseUrl&quot;</span>: <span class="hljs-string">&quot;.&quot;</span>,
-    <span class="hljs-string">&quot;paths&quot;</span>: {
-      <span class="hljs-string">&quot;*&quot;</span>: [<span class="hljs-string">&quot;node_modules/*&quot;</span>, <span class="hljs-string">&quot;src/types/*&quot;</span>]
-    }
-  },
-  <span class="hljs-string">&quot;include&quot;</span>: [<span class="hljs-string">&quot;src/**/*&quot;</span>]
-}</code></pre>
+				<p><code>npm run test:watch</code> for developement and debugging
+				<code>npm run docs</code> generate documentation using typedocs</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

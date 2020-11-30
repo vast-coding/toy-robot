@@ -10,6 +10,8 @@ The application is a simulation of a toy robot moving on a square table top, of 
 
 - [test coverage](https://toy-robot-test-coverage.vercel.app/)
 
+- [TypeDoc documentation](https://toy-robot-documentation.vercel.app/)
+
 Output and control is by terminal.
 
 ## Commands
@@ -46,4 +48,4 @@ Starting the simulation by running `npm run dev` will execute each command in th
 ### Other terminal commands
 
 `npm run test:watch` for developement and debugging
-`npm run docs` generate documentation using typedocs
+`npm run docs` generate documentation using TypeDoc
