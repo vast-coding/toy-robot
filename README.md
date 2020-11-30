@@ -36,4 +36,4 @@ Control is by terminal.
    2. tests
       1. to run tests: `npm run test`
       2. to see the test results in browser, simply open [test coverage](https://toy-robot-test-coverage.vercel.app/) or run tests again to generate new results locally.
-4. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run test` first_
+4. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run dev` first_
