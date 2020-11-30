@@ -4,6 +4,8 @@
 
 The application is a simulation of a toy robot moving on a square table top, of dimensions 5 units x 5 units.
 
+- [code](https://github.com/vast-coding/toy-robot.md)
+
 - [requirements](requirements.md)
 
 - [test coverage](https://toy-robot-test-coverage.vercel.app/)
@@ -20,11 +22,10 @@ Control is by terminal.
 
 - `REPORT` - display `X`,`Y` and `F` of the robot.
 
-## Developement tools
+## Developement
 
 - Mac OSX
 - Node 14.15.1
--
 
 ## Installation
 
