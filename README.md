@@ -8,7 +8,7 @@ The application is a simulation of a toy robot moving on a square table top, of 
 
 - [requirements](https://github.com/vast-coding/toy-robot/blob/main/repuirements.md)
 
-- [test coverage](https://toy-robot-test-coverage.vercel.app/)
+- [test coverage](https://toy-robot-tests-coverage-report.vercel.app)
 
 - [TypeDoc documentation](https://toy-robot-documentation-ts.vercel.app/)
 
@@ -16,9 +16,9 @@ Output and control is by terminal.
 
 ## Commands
 
-A list of commands are in the `src/input.txt` file.
+A list of commands to run are in the `src/data/input.txt` file.
 
-Starting the simulation by running `npm run dev` will execute each command in this test file, line by line.
+Starting the simulation by running `npm run start` will execute each command in this test file, line by line. Editing this file will update the results in the terminal.
 
 - `PLACE` - initial command to place Robot on board. All other commands are ignored until initial valid `PLACE` command.
 
@@ -30,24 +30,29 @@ Starting the simulation by running `npm run dev` will execute each command in th
 
 ## Developement
 
+- Jest
 - Mac OSX
 - Node 14.15.1
+- TypeDoc
 - Typescript
-- Jest
 
 ## Installation
 
+### In terminal:
+
 1. Clone the repository: `git clone https://github.com/vast-coding/toy-robot.git`
-2. Run `npm install` inside folder
-3. Running application:
+2. Enter folder `cd toy-robot`
+3. Run `npm install`
+4. Run `npm start` (runs in watch mode)
+5. Modify the data in `src/data/input.txt`, results will refresh immediately in terminal
 
-   1. To run robot simulation in terminal: `npm run dev` _(uses watch mode, so updating `src/data/input.txt` will refresh results)_
+### tests
 
-   2. tests
-      - to run tests: `npm run test`
-      - to see the test results in browser, simply open [test coverage](https://toy-robot-test-coverage.vercel.app/) or run tests again to generate new results locally.
+- to run tests: `npm run test`
+- to run tests in watch mode: `npm run test:watch`
+- to see the test results in browser, simply open [test coverage](https://toy-robot-tests-coverage-report.vercel.app) or run tests again to generate new results locally.
 
-4. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run dev` first_
+1. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run start` first_
 
 ### Other terminal commands
 

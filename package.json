@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watchAll",
-    "dev": "nodemon --watch src --watch src/data/input.txt --exec ts-node src/index.ts",
+    "start": "nodemon",
     "docs": "typedoc --out documentation src --exclude 'src/*.test.ts' --exclude 'src/**/*.test.ts'"
   },
   "keywords": [],
