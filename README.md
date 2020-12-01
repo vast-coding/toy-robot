@@ -10,7 +10,7 @@ The application is a simulation of a toy robot moving on a square table top, of 
 
 - [test coverage](https://toy-robot-test-coverage.vercel.app/)
 
-- [TypeDoc documentation](https://toy-robot-documentation.vercel.app/)
+- [TypeDoc documentation](https://toy-robot-documentation-ts.vercel.app/)
 
 Output and control is by terminal.
 
