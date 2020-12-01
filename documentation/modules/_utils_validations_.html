@@ -92,7 +92,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_validations_.html#checkisvalidcoordinates" class="tsd-kind-icon">check<wbr>IsValid<wbr>Coordinates</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_validations_.html#checkisvalidplace" class="tsd-kind-icon">check<wbr>IsValid<wbr>Place</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="_utils_validations_.html#getisvalid" class="tsd-kind-icon">get<wbr>IsValid</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="_utils_validations_.html#createvalidator" class="tsd-kind-icon">create<wbr>Validator</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,7 +106,7 @@
 					<div class="tsd-signature tsd-kind-icon">Valid<wbr>Instructions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"PLACE"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"MOVE"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RIGHT"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"LEFT"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"REPORT"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L10">utils/validations.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L10">utils/validations.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -116,10 +116,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="checkisvalidface" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>IsValid<wbr>Face</h3>
-					<div class="tsd-signature tsd-kind-icon">check<wbr>IsValid<wbr>Face<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = getIsValid(validFaces)</span></div>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>IsValid<wbr>Face<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = createValidator(validFaces)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L54">utils/validations.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L54">utils/validations.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -131,7 +131,7 @@
 							<dd><p>the possible command as a string</p>
 							</dd>
 							<dt>returns</dt>
-							<dd><p>boolean - is the string a command</p>
+							<dd><p>boolean - is the string a valid Face</p>
 							</dd>
 							<dt>example</dt>
 							<dd><pre><code class="language-ts"><span class="hljs-keyword">const</span> isValid = checkIsValidFace(<span class="hljs-string">&#x27;NORTH&#x27;</span>)</code></pre>
@@ -142,10 +142,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="checkisvalidinstruction" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>IsValid<wbr>Instruction</h3>
-					<div class="tsd-signature tsd-kind-icon">check<wbr>IsValid<wbr>Instruction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = getIsValid(validInstructions)</span></div>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>IsValid<wbr>Instruction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = createValidator(validInstructions)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L40">utils/validations.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L40">utils/validations.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -168,10 +168,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="checkisvalidrange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>IsValid<wbr>Range</h3>
-					<div class="tsd-signature tsd-kind-icon">check<wbr>IsValid<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = getIsValid(validSquares)</span></div>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>IsValid<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = createValidator(validSquares)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L70">utils/validations.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L70">utils/validations.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,10 +181,10 @@
 						<p>Used for checking both x and y board positions</p>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
-							<dd><p>the possible command as a string</p>
+							<dd><p>the possible x or y board coordinate as a string</p>
 							</dd>
 							<dt>returns</dt>
-							<dd><p>boolean - is the string a command</p>
+							<dd><p>boolean - is the given coordinate a valid coordinate</p>
 							</dd>
 							<dt>example</dt>
 							<dd><pre><code class="language-ts"><span class="hljs-keyword">const</span> isValid = checkIsValidRange(<span class="hljs-string">&#x27;3&#x27;</span>)</code></pre>
@@ -198,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">valid<wbr>Faces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;NORTH&#x27;, &#x27;EAST&#x27;, &#x27;SOUTH&#x27;, &#x27;WEST&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L1">utils/validations.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L1">utils/validations.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +208,7 @@
 					<div class="tsd-signature tsd-kind-icon">valid<wbr>Instructions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;PLACE&#x27;,&#x27;MOVE&#x27;,&#x27;RIGHT&#x27;,&#x27;LEFT&#x27;,&#x27;REPORT&#x27;,]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L3">utils/validations.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L3">utils/validations.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">valid<wbr>Squares<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;0&#x27;, &#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L13">utils/validations.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L13">utils/validations.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,7 +235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L87">utils/validations.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L87">utils/validations.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -283,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L104">utils/validations.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L104">utils/validations.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,21 +312,21 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-					<a name="getisvalid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>IsValid</h3>
+					<a name="createvalidator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Validator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>IsValid&lt;T&gt;<span class="tsd-signature-symbol">(</span>lookup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Validator&lt;T&gt;<span class="tsd-signature-symbol">(</span>lookup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/4122d5d/src/utils/validations.ts#L25">utils/validations.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/vast-coding/toy-robot/blob/fd25d58/src/utils/validations.ts#L25">utils/validations.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>getIsValid</p>
+									<p>createValidator</p>
 								</div>
 								<p>All validations are done by looking up the string in a lookup table.</p>
 								<p>This is the general typescript generic to create validation functions.</p>
@@ -423,7 +423,7 @@
 						<a href="_utils_validations_.html#checkisvalidplace" class="tsd-kind-icon">check<wbr>IsValid<wbr>Place</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="_utils_validations_.html#getisvalid" class="tsd-kind-icon">get<wbr>IsValid</a>
+						<a href="_utils_validations_.html#createvalidator" class="tsd-kind-icon">create<wbr>Validator</a>
 					</li>
 				</ul>
 			</nav>

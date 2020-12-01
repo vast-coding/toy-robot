@@ -76,7 +76,7 @@
 					</li>
 					<li><p><a href="https://github.com/vast-coding/toy-robot/blob/main/repuirements.md">requirements</a></p>
 					</li>
-					<li><p><a href="https://toy-robot-test-coverage.vercel.app/">test coverage</a></p>
+					<li><p><a href="https://toy-robot-tests-coverage-report.vercel.app">test coverage</a></p>
 					</li>
 					<li><p><a href="https://toy-robot-documentation-ts.vercel.app/">TypeDoc documentation</a></p>
 					</li>
@@ -85,8 +85,8 @@
 				<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
 					<h2>Commands</h2>
 				</a>
-				<p>A list of commands are in the <code>src/input.txt</code> file.</p>
-				<p>Starting the simulation by running <code>npm run dev</code> will execute each command in this test file, line by line.</p>
+				<p>A list of commands to run are in the <code>src/data/input.txt</code> file.</p>
+				<p>Starting the simulation by running <code>npm run start</code> will execute each command in this test file, line by line. Editing this file will update the results in the terminal.</p>
 				<ul>
 					<li><p><code>PLACE</code> - initial command to place Robot on board. All other commands are ignored until initial valid <code>PLACE</code> command.</p>
 					</li>
@@ -101,33 +101,35 @@
 					<h2>Developement</h2>
 				</a>
 				<ul>
+					<li>Jest</li>
 					<li>Mac OSX</li>
 					<li>Node 14.15.1</li>
+					<li>TypeDoc</li>
 					<li>Typescript</li>
-					<li>Jest</li>
 				</ul>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
+				<a href="#in-terminal" id="in-terminal" style="color: inherit; text-decoration: none;">
+					<h3>In terminal:</h3>
+				</a>
 				<ol>
-					<li><p>Clone the repository: <code>git clone https://github.com/vast-coding/toy-robot.git</code></p>
-					</li>
-					<li><p>Run <code>npm install</code> inside folder</p>
-					</li>
-					<li><p>Running application:</p>
-						<ol>
-							<li><p>To run robot simulation in terminal: <code>npm run dev</code> <em>(uses watch mode, so updating <code>src/data/input.txt</code> will refresh results)</em></p>
-							</li>
-							<li><p>tests</p>
-								<ul>
-									<li>to run tests: <code>npm run test</code></li>
-									<li>to see the test results in browser, simply open <a href="https://toy-robot-test-coverage.vercel.app/">test coverage</a> or run tests again to generate new results locally.</li>
-								</ul>
-							</li>
-						</ol>
-					</li>
-					<li><p>Robot instructions are in <code>src/data/input.txt</code>. You can edit this file, and see live changes. <em>be sure to use <code>npm run dev</code> first</em></p>
-					</li>
+					<li>Clone the repository: <code>git clone https://github.com/vast-coding/toy-robot.git</code></li>
+					<li>Enter folder <code>cd toy-robot</code></li>
+					<li>Run <code>npm install</code></li>
+					<li>Run <code>npm start</code> (runs in watch mode)</li>
+					<li>Modify the data in <code>src/data/input.txt</code>, results will refresh immediately in terminal</li>
+				</ol>
+				<a href="#tests" id="tests" style="color: inherit; text-decoration: none;">
+					<h3>tests</h3>
+				</a>
+				<ul>
+					<li>to run tests: <code>npm run test</code></li>
+					<li>to run tests in watch mode: <code>npm run test:watch</code></li>
+					<li>to see the test results in browser, simply open <a href="https://toy-robot-tests-coverage-report.vercel.app">test coverage</a> or run tests again to generate new results locally.</li>
+				</ul>
+				<ol>
+					<li>Robot instructions are in <code>src/data/input.txt</code>. You can edit this file, and see live changes. <em>be sure to use <code>npm run start</code> first</em></li>
 				</ol>
 				<a href="#other-terminal-commands" id="other-terminal-commands" style="color: inherit; text-decoration: none;">
 					<h3>Other terminal commands</h3>
