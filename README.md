@@ -40,10 +40,13 @@ Starting the simulation by running `npm run dev` will execute each command in th
 1. Clone the repository: `git clone https://github.com/vast-coding/toy-robot.git`
 2. Run `npm install` inside folder
 3. Running application:
+
    1. To run robot simulation in terminal: `npm run dev` _(uses watch mode, so updating `src/data/input.txt` will refresh results)_
+
    2. tests
       - to run tests: `npm run test`
       - to see the test results in browser, simply open [test coverage](https://toy-robot-test-coverage.vercel.app/) or run tests again to generate new results locally.
+
 4. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run dev` first_
 
 ### Other terminal commands
