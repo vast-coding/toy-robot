@@ -43,18 +43,118 @@ describe('MOVE', () => {
     }
     expect(left(initialState)).toStrictEqual(expectedState)
   })
+  describe('Robot turns RIGHT', () => {
+    test('it should face EAST when Robot has been placed NORTH', () => {
+      const initialState: State = {
+        currentFace: 'NORTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'EAST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(right(initialState)).toStrictEqual(expectedState)
+    })
 
-  test('it should turn right when Robot has been placed', () => {
-    const initialState: State = {
-      currentFace: 'NORTH',
-      position: { x: '0', y: '0' },
-      isPlaced: true,
-    }
-    const expectedState: State = {
-      currentFace: 'EAST',
-      position: { x: '0', y: '0' },
-      isPlaced: true,
-    }
-    expect(right(initialState)).toStrictEqual(expectedState)
+    test('it should face SOUTH when Robot has been placed EAST', () => {
+      const initialState: State = {
+        currentFace: 'EAST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'SOUTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(right(initialState)).toStrictEqual(expectedState)
+    })
+
+    test('it should face WEST when Robot has been placed SOUTH', () => {
+      const initialState: State = {
+        currentFace: 'SOUTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'WEST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(right(initialState)).toStrictEqual(expectedState)
+    })
+
+    test('it should face NORTH when Robot has been placed WEST', () => {
+      const initialState: State = {
+        currentFace: 'WEST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'NORTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(right(initialState)).toStrictEqual(expectedState)
+    })
+  })
+  describe('Robot turns LEFT', () => {
+    test('it should face WEST when Robot has been placed NORTH', () => {
+      const initialState: State = {
+        currentFace: 'NORTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'WEST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(left(initialState)).toStrictEqual(expectedState)
+    })
+
+    test('it should face NORTH when Robot has been placed EAST', () => {
+      const initialState: State = {
+        currentFace: 'EAST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'NORTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(left(initialState)).toStrictEqual(expectedState)
+    })
+
+    test('it should face EAST when Robot has been placed SOUTH', () => {
+      const initialState: State = {
+        currentFace: 'SOUTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'EAST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(left(initialState)).toStrictEqual(expectedState)
+    })
+
+    test('it should face SOUTH when Robot has been placed WEST', () => {
+      const initialState: State = {
+        currentFace: 'WEST',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      const expectedState: State = {
+        currentFace: 'SOUTH',
+        position: { x: '0', y: '0' },
+        isPlaced: true,
+      }
+      expect(left(initialState)).toStrictEqual(expectedState)
+    })
   })
 })

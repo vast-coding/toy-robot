@@ -13,7 +13,7 @@ export type ValidInstructions = 'PLACE' | 'MOVE' | 'RIGHT' | 'LEFT' | 'REPORT'
 export const validSquares: readonly string[] = ['0', '1', '2', '3', '4']
 
 /**
- * getIsValid
+ * createValidator
  *
  * All validations are done by looking up the string in a lookup table.
  *
@@ -22,7 +22,7 @@ export const validSquares: readonly string[] = ['0', '1', '2', '3', '4']
  * @param lookup - the object to act a valid lookup dictionary.
  * @returns validation function specific to that lookup object
  */
-const getIsValid = <T>(lookup: T) => (token: any): token is T[keyof T] =>
+const createValidator = <T>(lookup: T) => (token: any): token is T[keyof T] =>
   Object.values(lookup).includes(token as T[keyof T])
 
 /**
@@ -37,13 +37,13 @@ const getIsValid = <T>(lookup: T) => (token: any): token is T[keyof T] =>
  * const isValid = checkIsValidInstruction('REPORT')
  * ```
  */
-export const checkIsValidInstruction = getIsValid(validInstructions)
+export const checkIsValidInstruction = createValidator(validInstructions)
 
 /**
  * checkIsValidFace
  *
  * @param string - the possible command as a string
- * @returns boolean - is the string a command
+ * @returns boolean - is the string a valid Face
  *
  * @example
  *
@@ -51,15 +51,15 @@ export const checkIsValidInstruction = getIsValid(validInstructions)
  * const isValid = checkIsValidFace('NORTH')
  * ```
  */
-export const checkIsValidFace = getIsValid(validFaces)
+export const checkIsValidFace = createValidator(validFaces)
 
 /**
  * checkIsValidRange
  *
  * Used for checking both x and y board positions
  *
- * @param string - the possible command as a string
- * @returns boolean - is the string a command
+ * @param string - the possible x or y board coordinate as a string
+ * @returns boolean - is the given coordinate a valid coordinate
  *
  * @example
  *
@@ -67,7 +67,7 @@ export const checkIsValidFace = getIsValid(validFaces)
  * const isValid = checkIsValidRange('3')
  * ```
  */
-const checkIsValidRange = getIsValid(validSquares)
+const checkIsValidRange = createValidator(validSquares)
 
 /**
  * checkIsValidCoordinates

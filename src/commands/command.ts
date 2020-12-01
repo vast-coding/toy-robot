@@ -60,7 +60,6 @@ const commandList = {
  * ```
  */
 export const command = (state: State, line: string) => {
-  console.log(line)
   const [instruction, args] = line.split(' ')
   const isValidPlaceCommand = checkIsValidPlace(instruction, args)
   if (isValidPlaceCommand) {

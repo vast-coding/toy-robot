@@ -18,7 +18,7 @@ export type MoveOptions = {
 
 export const moveOptions: MoveOptions = {
   NORTH: { x: 0, y: 1, RIGHT: 'EAST', LEFT: 'WEST' },
-  EAST: { x: 1, y: 0, RIGHT: 'SOUTH', LEFT: 'SOUTH' },
+  EAST: { x: 1, y: 0, RIGHT: 'SOUTH', LEFT: 'NORTH' },
   SOUTH: { x: 0, y: -1, RIGHT: 'WEST', LEFT: 'EAST' },
-  WEST: { x: -1, y: 0, RIGHT: 'NORTH', LEFT: 'NORTH' },
+  WEST: { x: -1, y: 0, RIGHT: 'NORTH', LEFT: 'SOUTH' },
 }
