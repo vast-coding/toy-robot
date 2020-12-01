@@ -18,7 +18,7 @@ Output and control is by terminal.
 
 A list of commands to run are in the `src/data/input.txt` file.
 
-Starting the simulation by running `npm run start` will execute each command in this test file, line by line. Editing this file will update the results in the terminal.
+Starting the simulation will execute each command in this test file, line by line. Editing this file will update the results in the terminal.
 
 - `PLACE` - initial command to place Robot on board. All other commands are ignored until initial valid `PLACE` command.
 
@@ -50,12 +50,12 @@ Starting the simulation by running `npm run start` will execute each command in 
 
 - to run tests: `npm run test`
 - to run tests in watch mode: `npm run test:watch`
-- to see the test results in browser, simply open [test coverage](https://toy-robot-tests-coverage-report.vercel.app) or run tests again to generate new results locally.
+- to see the test results in the browser, simply open [test coverage](https://toy-robot-tests-coverage-report.vercel.app) or run tests again to generate new results locally.
 
-1. Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run start` first_
+### Updating instructions
+
+Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run start` first_
 
 ### Other terminal commands
-
-- `npm run test:watch` for developement and debugging
 
 - `npm run docs` generate documentation using TypeDoc
