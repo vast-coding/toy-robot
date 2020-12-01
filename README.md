@@ -18,7 +18,7 @@ Output and control is by terminal.
 
 A list of commands to run are in the `src/data/input.txt` file.
 
-Starting the simulation will execute each command in this test file, line by line. Editing this file will update the results in the terminal.
+Starting the simulation will execute each command in this text file, line by line. Editing this file will update the results in the terminal.
 
 - `PLACE` - initial command to place Robot on board. All other commands are ignored until initial valid `PLACE` command.
 
@@ -46,7 +46,7 @@ Starting the simulation will execute each command in this test file, line by lin
 4. Run `npm start` (runs in watch mode)
 5. Modify the data in `src/data/input.txt`, results will refresh immediately in terminal
 
-### tests
+### Tests
 
 - to run tests: `npm run test`
 - to run tests in watch mode: `npm run test:watch`
@@ -54,7 +54,7 @@ Starting the simulation will execute each command in this test file, line by lin
 
 ### Updating instructions
 
-Robot instructions are in `src/data/input.txt`. You can edit this file, and see live changes. _be sure to use `npm run start` first_
+Robot instructions are in `src/data/input.txt`. You can edit and save this file, and see resulting live changes in the terminal. _be sure to use `npm run start` first_
 
 ### Other terminal commands
 
