@@ -9,7 +9,7 @@ import { place } from './place'
  *
  * Calculates the new Robot position, then passes that position to the place command.
  *
- * The place command will then move if position is valid.
+ * The place command will then move the robot if the given position is valid.
  *
  * @param state - the state of the app
  * @returns state

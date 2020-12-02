@@ -54,7 +54,7 @@ const commandList = {
  * @example
  *
  * ```ts
- * const state ={isPlaced, position:{x:'1',y:'2'}, currentFace:'NORTH'}
+ * const state = {isPlaced, position:{x:'1',y:'2'}, currentFace:'NORTH'}
  * const instruction = 'MOVE'
  * const newState = command(state, instruction)
  * ```
@@ -72,6 +72,9 @@ export const command = (state: State, line: string) => {
   if (!state.isPlaced) {
     return state
   }
+  // Robot is placed, but is not a valid PLACE instruction.
+  // now test if it is one of the other allowed instructions:
+  // MOVE, RIGHT, LEFT, REPORT
   // instructions other than PLACE will be run here:
   const isValidInstruction = checkIsValidInstruction(instruction)
   const validInstruction = instruction as ValidInstructions

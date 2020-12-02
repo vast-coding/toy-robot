@@ -1,9 +1,5 @@
-import { CurrentFace, State } from '../state'
-import {
-  checkIsValidCoordinates,
-  checkIsValidFace,
-  checkIsValidPlace,
-} from '../utils/validations'
+import { Coordinate, CurrentFace, State } from '../state'
+import { checkIsValidCoordinates, checkIsValidFace } from '../utils/validations'
 
 /**
  * PLACE
