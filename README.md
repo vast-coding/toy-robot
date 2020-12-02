@@ -48,7 +48,7 @@ Starting the simulation will execute each command in this text file, line by lin
 
 ### Tests
 
-- to run tests: `npm run test`
+- to run tests and generate test-coverage data: `npm run test`
 - to run tests in watch mode: `npm run test:watch`
 - to see the test results in the browser, simply open [test coverage](https://toy-robot-tests-coverage-report.vercel.app) or run tests again to generate new results locally.
 
@@ -59,3 +59,4 @@ Robot instructions are in `src/data/input.txt`. You can edit and save this file,
 ### Other terminal commands
 
 - `npm run docs` generate documentation using TypeDoc
+- `npm run test:watch-coverage` update test and coverage results

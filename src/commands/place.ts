@@ -1,4 +1,4 @@
-import { Coordinate, CurrentFace, State } from '../state'
+import { Coordinate, Face, State } from '../state'
 import { checkIsValidCoordinates, checkIsValidFace } from '../utils/validations'
 
 /**
@@ -18,7 +18,7 @@ import { checkIsValidCoordinates, checkIsValidFace } from '../utils/validations'
 export const place = (state: State, x: string, y: string, face: string) => {
   const isValidFace = checkIsValidFace(face)
   const isValidCoordinates = checkIsValidCoordinates(x, y)
-  const validFace = face as CurrentFace
+  const validFace = face as Face
 
   if (isValidFace && isValidCoordinates) {
     state.position = { x, y }
